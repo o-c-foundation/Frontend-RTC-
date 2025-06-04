@@ -1,0 +1,241 @@
+<svg width="283" height="157" viewBox="0 0 283 157" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_twitter_post)">
+
+<!-- Background Glow -->
+<ellipse cx="141.5" cy="78.5" rx="120" ry="60" fill="url(#paint_bg_glow)" fill-opacity="0.1"/>
+
+<!-- Main Tweet Card -->
+<g filter="url(#filter0_glass)">
+<rect x="45" y="35" width="193" height="87" rx="16" fill="url(#paint_tweet_bg)" fill-opacity="0.9" stroke="url(#paint_tweet_border)" stroke-width="1.5"/>
+</g>
+
+<!-- X Logo (Twitter) -->
+<g transform="translate(65, 45)">
+<path d="M12.5 2.5L7.5 8.5L2.5 2.5M7.5 8.5L12.5 14.5M7.5 8.5L2.5 14.5" stroke="url(#paint_x_logo)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<!-- Tweet Text Lines -->
+<rect x="85" y="48" width="120" height="3" rx="1.5" fill="url(#paint_text_line)" fill-opacity="0.7"/>
+<rect x="85" y="55" width="95" height="3" rx="1.5" fill="url(#paint_text_line)" fill-opacity="0.5"/>
+<rect x="85" y="62" width="110" height="3" rx="1.5" fill="url(#paint_text_line)" fill-opacity="0.6"/>
+
+<!-- Tweet Metrics -->
+<g transform="translate(85, 75)">
+<!-- Heart -->
+<path d="M2 4.5C2 2.5 3.5 1 5.5 1C6.5 1 7.5 1.5 8 2.5C8.5 1.5 9.5 1 10.5 1C12.5 1 14 2.5 14 4.5C14 8 8 12 8 12S2 8 2 4.5Z" fill="url(#paint_heart)" fill-opacity="0.6"/>
+<text x="18" y="9" font-family="Arial" font-size="8" fill="url(#paint_metrics_text)">2.4K</text>
+
+<!-- Retweet -->
+<path d="M35 2L38 5L35 8M38 5H30C28.5 5 27 6.5 27 8M45 10L42 7L45 4M42 7H50C51.5 7 53 5.5 53 4" stroke="url(#paint_retweet)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<text x="58" y="9" font-family="Arial" font-size="8" fill="url(#paint_metrics_text)">891</text>
+
+<!-- Share -->
+<path d="M78 8L82 4L86 8M82 4V12" stroke="url(#paint_share)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="90" y="9" font-family="Arial" font-size="8" fill="url(#paint_metrics_text)">156</text>
+</g>
+
+<!-- Tokenization Elements -->
+<!-- Diamond Token 1 -->
+<g transform="translate(200, 20)">
+<path d="M12 2L20 10L12 18L4 10L12 2Z" fill="url(#paint_diamond1)" stroke="url(#paint_diamond1_stroke)" stroke-width="1.5"/>
+<circle cx="12" cy="10" r="15" fill="none" stroke="url(#paint_diamond1_glow)" stroke-width="1" opacity="0.3" stroke-dasharray="2,2">
+<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 12 10" to="360 12 10" dur="8s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+<!-- Diamond Token 2 -->
+<g transform="translate(25, 70)">
+<path d="M8 1.5L14 7L8 12.5L2 7L8 1.5Z" fill="url(#paint_diamond2)" stroke="url(#paint_diamond2_stroke)" stroke-width="1.2"/>
+<circle cx="8" cy="7" r="12" fill="none" stroke="url(#paint_diamond2_glow)" stroke-width="0.8" opacity="0.25" stroke-dasharray="1.5,1.5">
+<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="360 8 7" to="0 8 7" dur="6s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+<!-- Floating Coins -->
+<g transform="translate(220, 90)">
+<circle cx="8" cy="8" r="6" fill="url(#paint_coin1)" stroke="url(#paint_coin1_stroke)" stroke-width="1"/>
+<rect x="5" y="6" width="6" height="4" rx="2" fill="url(#paint_coin_symbol)"/>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" values="220,90; 225,85; 220,90" dur="3s" repeatCount="indefinite"/>
+</g>
+
+<g transform="translate(30, 25)">
+<circle cx="6" cy="6" r="4.5" fill="url(#paint_coin2)" stroke="url(#paint_coin2_stroke)" stroke-width="0.8"/>
+<rect x="4" y="4.5" width="4" height="3" rx="1.5" fill="url(#paint_coin_symbol)"/>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" values="30,25; 35,20; 30,25" dur="4s" repeatCount="indefinite"/>
+</g>
+
+<!-- Connection Lines -->
+<path d="M185 45L200 35" stroke="url(#paint_connection)" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="3,3">
+<animate attributeName="stroke-dashoffset" values="0;6" dur="2s" repeatCount="indefinite"/>
+</path>
+
+<path d="M65 85L40 85" stroke="url(#paint_connection)" stroke-width="1.5" stroke-opacity="0.4" stroke-dasharray="3,3">
+<animate attributeName="stroke-dashoffset" values="0;6" dur="2.5s" repeatCount="indefinite"/>
+</path>
+
+<!-- Sparkle Effects -->
+<g opacity="0.6">
+<g transform="translate(160, 25)">
+<path d="M2 6L6 2L10 6L6 10L2 6Z" fill="url(#paint_sparkle)">
+<animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.5;1" dur="2s" repeatCount="indefinite"/>
+</path>
+</g>
+
+<g transform="translate(50, 105)">
+<path d="M1.5 4.5L4.5 1.5L7.5 4.5L4.5 7.5L1.5 4.5Z" fill="url(#paint_sparkle)">
+<animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.3;1" dur="1.8s" repeatCount="indefinite"/>
+</path>
+</g>
+
+<g transform="translate(195, 110)">
+<path d="M1 3L3 1L5 3L3 5L1 3Z" fill="url(#paint_sparkle)">
+<animateTransform attributeName="transform" attributeType="XML" type="scale" values="1;1.4;1" dur="2.2s" repeatCount="indefinite"/>
+</path>
+</g>
+</g>
+
+<!-- Dollar Signs -->
+<g transform="translate(170, 100)" opacity="0.7">
+<text font-family="Arial Black" font-size="12" fill="url(#paint_dollar)">$</text>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" values="170,100; 175,95; 170,100" dur="3.5s" repeatCount="indefinite"/>
+</g>
+
+<g transform="translate(110, 25)" opacity="0.6">
+<text font-family="Arial Black" font-size="10" fill="url(#paint_dollar)">$</text>
+<animateTransform attributeName="transform" attributeType="XML" type="translate" values="110,25; 115,20; 110,25" dur="4.2s" repeatCount="indefinite"/>
+</g>
+
+</g>
+
+<defs>
+<!-- Filters -->
+<filter id="filter0_glass" x="43" y="33" width="197" height="91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="1"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/>
+</filter>
+
+<!-- Gradients -->
+<linearGradient id="paint_bg_glow" x1="21.5" y1="18.5" x2="261.5" y2="138.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#915BF8"/>
+<stop offset="1" stop-color="#0720FF" stop-opacity="0.3"/>
+</linearGradient>
+
+<linearGradient id="paint_tweet_bg" x1="45" y1="35" x2="238" y2="122" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1a1a1a" stop-opacity="0.9"/>
+<stop offset="1" stop-color="#0f0f0f" stop-opacity="0.7"/>
+</linearGradient>
+
+<linearGradient id="paint_tweet_border" x1="45" y1="35" x2="238" y2="122" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3D1EFE"/>
+<stop offset="1" stop-color="#915BF8" stop-opacity="0.5"/>
+</linearGradient>
+
+<linearGradient id="paint_x_logo" x1="2.5" y1="2.5" x2="12.5" y2="14.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1DA1F2"/>
+<stop offset="1" stop-color="#0084CC"/>
+</linearGradient>
+
+<linearGradient id="paint_text_line" x1="85" y1="48" x2="205" y2="48" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#cccccc"/>
+</linearGradient>
+
+<linearGradient id="paint_heart" x1="2" y1="1" x2="14" y2="12" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ff6b9d"/>
+<stop offset="1" stop-color="#e91e63"/>
+</linearGradient>
+
+<linearGradient id="paint_retweet" x1="27" y1="2" x2="53" y2="10" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1DA1F2"/>
+<stop offset="1" stop-color="#0084CC"/>
+</linearGradient>
+
+<linearGradient id="paint_share" x1="78" y1="4" x2="86" y2="12" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1DA1F2"/>
+<stop offset="1" stop-color="#0084CC"/>
+</linearGradient>
+
+<linearGradient id="paint_metrics_text" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#aaaaaa"/>
+<stop offset="1" stop-color="#888888"/>
+</linearGradient>
+
+<linearGradient id="paint_diamond1" x1="4" y1="2" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD700"/>
+<stop offset="0.5" stop-color="#FFA500"/>
+<stop offset="1" stop-color="#FF6347"/>
+</linearGradient>
+
+<linearGradient id="paint_diamond1_stroke" x1="4" y1="2" x2="20" y2="18" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD700"/>
+<stop offset="1" stop-color="#FF6347"/>
+</linearGradient>
+
+<linearGradient id="paint_diamond1_glow" x1="0" y1="0" x2="24" y2="20" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD700"/>
+<stop offset="1" stop-color="#FF6347"/>
+</linearGradient>
+
+<linearGradient id="paint_diamond2" x1="2" y1="1.5" x2="14" y2="12.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#915BF8"/>
+<stop offset="0.5" stop-color="#7c3aed"/>
+<stop offset="1" stop-color="#5b21b6"/>
+</linearGradient>
+
+<linearGradient id="paint_diamond2_stroke" x1="2" y1="1.5" x2="14" y2="12.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#915BF8"/>
+<stop offset="1" stop-color="#5b21b6"/>
+</linearGradient>
+
+<linearGradient id="paint_diamond2_glow" x1="0" y1="0" x2="16" y2="14" gradientUnits="userSpaceOnUse">
+<stop stop-color="#915BF8"/>
+<stop offset="1" stop-color="#5b21b6"/>
+</linearGradient>
+
+<linearGradient id="paint_coin1" x1="2" y1="2" x2="14" y2="14" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD700"/>
+<stop offset="1" stop-color="#FFA500"/>
+</linearGradient>
+
+<linearGradient id="paint_coin1_stroke" x1="2" y1="2" x2="14" y2="14" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD700"/>
+<stop offset="1" stop-color="#FF8C00"/>
+</linearGradient>
+
+<linearGradient id="paint_coin2" x1="1.5" y1="1.5" x2="10.5" y2="10.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0720FF"/>
+<stop offset="1" stop-color="#3D1EFE"/>
+</linearGradient>
+
+<linearGradient id="paint_coin2_stroke" x1="1.5" y1="1.5" x2="10.5" y2="10.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0720FF"/>
+<stop offset="1" stop-color="#1E0BDA"/>
+</linearGradient>
+
+<linearGradient id="paint_coin_symbol" x1="0" y1="0" x2="10" y2="10" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ffffff"/>
+<stop offset="1" stop-color="#f0f0f0"/>
+</linearGradient>
+
+<linearGradient id="paint_connection" x1="0" y1="0" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#915BF8"/>
+<stop offset="1" stop-color="#3D1EFE"/>
+</linearGradient>
+
+<linearGradient id="paint_sparkle" x1="0" y1="0" x2="10" y2="10" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFD700"/>
+<stop offset="0.5" stop-color="#FFA500"/>
+<stop offset="1" stop-color="#FF6347"/>
+</linearGradient>
+
+<linearGradient id="paint_dollar" x1="0" y1="0" x2="15" y2="15" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00C851"/>
+<stop offset="1" stop-color="#007E33"/>
+</linearGradient>
+
+<clipPath id="clip0_twitter_post">
+<rect width="282" height="156" fill="white" transform="translate(0.5 0.5)"/>
+</clipPath>
+</defs>
+</svg>

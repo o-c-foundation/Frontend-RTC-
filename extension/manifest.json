@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Press F",
+  "version": "1.0",
+  "description": "Press F to pay respects",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://twitter.com/*", "*://x.com/*"],
+      "js": ["ethers.min.js", "content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [{
+    "resources": ["images/*"],
+    "matches": ["*://*.twitter.com/*", "*://*.x.com/*"]
+  }]
+} 
