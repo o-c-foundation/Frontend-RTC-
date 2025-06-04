@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Press F",
+  "name": "ChainOS RtcTrencher",
   "version": "1.0",
-  "description": "Press F to pay respects",
+  "description": "RtcTrencher - Tokenize Twitter posts",
   "permissions": [
     "activeTab"
   ],

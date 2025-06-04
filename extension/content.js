@@ -306,7 +306,7 @@ function handleTweetHover(event) {
       // Update token info
       updateTokenInfo(tweet);
 
-      showOverlay(); // Show the "Press F" text and effects
+      showOverlay(); // Show the "RtcTrencher" text and effects
     }
   }, 150); // 150ms debounce
 }
@@ -769,7 +769,7 @@ function handleKeyPress(event) {
           }, 500);
         }
       } catch (error) {
-        console.error("Error in Press F extension:", error);
+        console.error("Error in ChainOS RtcTrencher extension:", error);
       }
     }
   }
@@ -782,7 +782,7 @@ document.addEventListener("keydown", handleKeyPress);
 // Initialize contract when extension loads
 initializeContract()
   .then(() => {
-    console.log("Press F extension is active on", window.location.hostname);
+    console.log("ChainOS RtcTrencher extension is active on", window.location.hostname);
   })
   .catch((error) => {
     console.error("Failed to initialize contract:", error);
