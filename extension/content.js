@@ -745,7 +745,7 @@ function handleKeyPress(event) {
               document.querySelector('[data-testid="tweetTextarea_0"]');
 
             if (replyInput) {
-              simulateTyping(replyInput, "@payrespectsbot");
+              simulateTyping(replyInput, "@RtcTrencher");
 
               // Wait a moment for the reply button to become enabled
               setTimeout(() => {
