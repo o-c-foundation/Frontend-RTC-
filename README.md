@@ -1,10 +1,10 @@
-# Press F: Tokenized Social Media Platform
+# ChainOS RtcTrencher: Tokenized Social Media Platform
 
 ## Introduction
 
-Press F is a revolutionary blockchain application for tokenizing Twitter posts and creating tradeable meme coins on the Base network. The platform allows users to transform viral tweets into tradeable tokens, creating a new ecosystem where social media popularity can be directly monetized through cryptocurrency.
+ChainOS RtcTrencher is a revolutionary blockchain application for tokenizing Twitter posts and creating tradeable meme coins on the Base network. The platform allows users to transform viral tweets into tradeable tokens, creating a new ecosystem where social media popularity can be directly monetized through cryptocurrency.
 
-The name "Press F" pays homage to the internet meme originating from Call of Duty: Advanced Warfare, where players were prompted to "Press F to Pay Respects" - representing the internet culture that often drives meme coin popularity.
+The name draws inspiration from the internet meme "Press F to Pay Respects" originating from Call of Duty: Advanced Warfare - representing the internet culture that often drives meme coin popularity.
 
 ## Overview
 
@@ -203,7 +203,7 @@ createWeb3Modal({
   projectId: getProjectId(),
   enableAnalytics: false,
   metadata: {
-    name: "Press F",
+    name: "ChainOS RtcTrencher",
     description: "Tokenize Twitter posts as meme coins",
     url: window.location.origin,
     icons: [`${window.location.origin}/logo.png`],
@@ -330,7 +330,7 @@ class TwitterService {
       accessSecret: config.TWITTER_ACCESS_SECRET,
     });
     this.rules = [
-      { value: '#PressF OR #PressF_Token -is:retweet -is:reply', tag: 'meme_tokens' },
+      { value: '#PressF OR #ChainOS OR #RtcTrencher -is:retweet -is:reply', tag: 'meme_tokens' },
     ];
   }
 
