@@ -407,7 +407,7 @@ function handleTokenData(tokenData, tokenInfo, overlay) {
   // Update overlay text for token existence
   overlay.innerHTML = `
         <div class="salute-sprite" style="background-image: var(--salute1-url)"></div>
-        <div class="press-f-text">Press <span class="f-key">F</span> to Pay Respects</div>
+        <div class="press-f-text">Press <span class="f-key">F</span> to RtcTrench</div>
     `;
 
   // Start simulation only if we have a token
@@ -677,7 +677,7 @@ function handleKeyPress(event) {
     // Get the current state from the overlay text
     const overlay = document.querySelector(".press-f-overlay");
     const isTokenExists =
-      overlay && overlay.textContent.includes("Pay Respects");
+      overlay && (overlay.textContent.includes("Pay Respects") || overlay.textContent.includes("RtcTrench"));
 
     // Flash the instruction box
     if (overlay) {
@@ -745,7 +745,31 @@ function handleKeyPress(event) {
               document.querySelector('[data-testid="tweetTextarea_0"]');
 
             if (replyInput) {
-              simulateTyping(replyInput, "@RtcTrencher");
+              // Clear any existing text first
+              while (replyInput.textContent !== "") {
+                document.execCommand("selectAll", false, null);
+                document.execCommand("delete", false, null);
+              }
+              
+              // Set a constant to ensure we're using the correct bot username every time
+              const BOT_USERNAME = "@RtcTrencher";
+              
+              // Add debugging alert to show what's being inserted
+              console.log("INSERTING BOT USERNAME: " + BOT_USERNAME);
+              
+              // Force direct insertion of exactly BOT_USERNAME
+              simulateTyping(replyInput, BOT_USERNAME);
+              
+              // Set the innerHTML/innerText directly as a backup method
+              setTimeout(() => {
+                if (replyInput.innerHTML !== BOT_USERNAME && replyInput.textContent !== BOT_USERNAME) {
+                  console.log("Forcing bot username via innerHTML");
+                  replyInput.innerHTML = BOT_USERNAME;
+                  // Trigger events to notify Twitter
+                  replyInput.dispatchEvent(new Event("input", { bubbles: true }));
+                  replyInput.dispatchEvent(new Event("change", { bubbles: true }));
+                }
+              }, 100);
 
               // Wait a moment for the reply button to become enabled
               setTimeout(() => {
