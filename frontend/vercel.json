@@ -1,9 +1,0 @@
-{
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
-  "buildCommand": "npm run vercel-build",
-  "installCommand": "npm install",
-  "framework": "vite",
-  "github": {
-    "silent": true
-  }
-}
