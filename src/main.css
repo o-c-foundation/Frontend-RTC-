@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.steps .step:after,
+.steps .step:before {
+  background-color: #1a1a1a; /* Dark gray */
+  color: #00ff7f; /* Robin-neon green */
+  border: 1px solid #00ff7f;
+}
+
+.steps .step-primary + .step-primary:before,
+.steps .step-primary:after {
+  background-color: #00ff7f; /* Robin-neon green */
+  color: #000000; /* Black text on neon green */
+  box-shadow: 0 0 10px #00ff7f;
+}
+
+.btn:disabled {
+  color: #666;
+  background-color: #1a1a1a;
+  border-color: #333;
+}
+
+:root {
+  font-family: 'Capsula Sans', 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #00ff7f; /* Robin-neon green */
+  background-color: #000000; /* Pure black */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#nextButton {
+  @apply btn w-[188px] px-4 bg-neon-green-500 rounded-lg border border-neon-green-500 text-black hover:bg-black hover:text-neon-green-500 font-capsula;
+  box-shadow: 0 0 15px rgba(0, 255, 127, 0.5);
+  transition: all 0.3s ease;
+}
+
+#nextButton:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.8);
+}
+
+.header {
+  @apply text-center text-neon-green-500 text-3xl font-bold mt-7 font-capsula;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0 0 10px rgba(0, 255, 127, 0.5);
+}
+
+/* Font utility classes */
+.font-capsula-lg {
+  @apply font-capsula text-2xl font-bold text-neon-green-500;
+  text-shadow: 0 0 8px rgba(0, 255, 127, 0.4);
+}
+
+.font-capsula-md {
+  @apply font-capsula text-xl font-normal text-neon-green-400;
+}
+
+.font-capsula-sm {
+  @apply font-capsula text-lg font-normal text-neon-green-300;
+}
+
+/* Keep Silkscreen for retro elements */
+.font-silkscreen-lg {
+  @apply font-silkscreen text-2xl font-bold text-neon-green-500;
+  text-shadow: 0 0 8px rgba(0, 255, 127, 0.4);
+}
+
+.font-silkscreen-md {
+  @apply font-silkscreen text-xl font-normal text-neon-green-400;
+}
+
+.font-silkscreen-sm {
+  @apply font-silkscreen text-lg font-normal text-neon-green-300;
+}
+
+.desc {
+  @apply text-center font-normal text-lg text-neon-green-300 py-4 font-capsula;
+  transition: all 0.3s ease-in-out;
+}
+
+.header.in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.header.out {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+
+.desc.in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.desc.out {
+  opacity: 0;
+  transform: translateX(-10%);
+}
+
+.steps .step:before {
+  transition: all 0.3s ease-in-out;
+}
+
+.steps .step::after {
+  transition: all 0.3s ease-in-out;
+}
